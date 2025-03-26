@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .area {
+        height: 200px;
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 mt-5 text-center d-flex justify-content-md-between justify-content-lg-around justify-content-xl-end ">
+        <div class=" area  col-12 mt-5 text-center d-flex ">
           <div class="p-2 bg-danger bg-gradient">DIV-1</div>
-          <div class="p-2 bg-success bg-gradient">DIV-2</div>
+          <div class="p-2 bg-success bg-gradient align-self-center align-self-md-start">DIV-2</div>
+          <div class="p-2 bg-warning bg-gradient">DIV-3</div>
+        </div>
+
+        <div class=" area  col-12 mt-5 text-center d-flex ">
+          <div class="p-2 bg-danger bg-gradient flex-fill">DIV-1</div>
+          <div class="p-2 bg-success bg-gradient flex-fill ">DIV-2</div>
+          <div class="p-2 bg-warning bg-gradient">DIV-3</div>
+        </div>
+
+        <div class=" area  col-12 mt-5 text-center d-flex ">
+          <div class="p-2 bg-danger bg-gradient">DIV-1</div>
+          <div class="p-2 bg-success bg-gradient flex-grow-1">DIV-2</div>
           <div class="p-2 bg-warning bg-gradient">DIV-3</div>
         </div>
       </div>
     </div>
+
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.min.js"></script>
   </body>
