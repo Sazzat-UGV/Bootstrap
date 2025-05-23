@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="stylesheet" href="css/bootstrap.min.css"> </head>
-    
-    <body>
-       <div class="container-fluid">
-         <h1 class="bg-primary">Hello World!</h1>
-         <h1 class="bg-primary-subtle">Hello World!</h1>
-         <h1 class="bg-secondary">Hello World!</h1>
-         <h1 class="bg-secondary-subtle">Hello World!</h1>
-         <h1 class="bg-success">Hello World!</h1>
-         <h1 class="bg-success-subtle">Hello World!</h1>
-         <h1 class="bg-danger">Hello World!</h1>
-         <h1 class="bg-danger-subtle">Hello World!</h1>
-         
-         
-         <h1 class="bg-primary bg-gradient bg-opacity-50">Hello World!</h1>
-       </div>
-    </body>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </html>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #f7f4f4;
+    }
+  </style>
+  <body class="container-fluid d-flex mt-2 gap-2 flex-wrap justify-content-center item">
+    <div class="border border-3"></div>
+    <div class="border border-3 border-top-0"></div>
+    <div class="border-top border-5"></div>
+    <div class="border-end border-5"></div>
+    <div class="border-bottom border-5 border-danger"></div>
+    <div class="border-start border-5 border-warning-subtle"></div>
+    <div class="border border-3 rounded-1"></div>
+    <div class="border border-3 rounded-5"></div>
+    <div class="border border-3 rounded-circle"></div>
+    <div class="border border-3 rounded-pill w-25"></div>
+    <div class="border border-3 rounded-top border-opacity-10 border-primary"></div>
+    <div class="border border-3 rounded-start"></div>
+    <div class="border border-3 rounded-bottom"></div>
+    <div class="border border-3 rounded-bottom-4"></div>
+    <div class="border border-3 rounded-end-circle"></div>
+    <div class="border border-3 rounded-top-pill"></div>
+  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>
