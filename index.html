@@ -7,18 +7,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="container mt-2">
-      <div class="bg-warning d-inline-block p-5 text-white">
-        Display Inline Block
-      </div>
-      <div class="bg-danger d-inline text-white p-5">Display Inline</div>
-      <div class="bg-success d-inline text-white p-5 d-none">Display None</div>
-      <span class="d-block mt-1 p-5 bg-success">Display Block</span>
-      <div class=" mt-3 d-flex gap-1">
-        <div class="bg-danger p-5">1</div>
-        <div class="bg-primary p-5">2</div>
-        <div class="bg-info p-5">3</div>
-      </div>
+    <div class="container mt-2 d-print-flex gap-5">
+    <div class="bg-primary d-lg-none"> Order-1</div>
+    <div class="bg-success d-none d-lg-block d-print-block">Order-2</div>
+    <span class="bg-warning d-lg-block d-print-none">span-1</span>
     </div>
   </body>
   <script src="js/bootstrap.bundle.min.js"></script>
