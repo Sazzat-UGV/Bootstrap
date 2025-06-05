@@ -13,8 +13,25 @@
   </head>
   <body>
    <div class="container-fluid">
-    <img src="./image/2.jpg" class="img-fluid" alt="...">
-    <img src="./image/2.jpg" class="img-thumbnail" alt="...">
+    <div class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+   <div class="container-fluid">
+    <div class="spinner-border spinner-border-sm text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+    <div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="d-flex align-items-center">
+  <strong role="status">Loading...</strong>
+  <div class="spinner-border ms-auto" aria-hidden="true"></div>
+</div>
+
+<button class="btn btn-danger d-flex align-items-center justify-content-center gap-2 " type="button">
+<p class="spinner-border"></p>
+<p>Loading...</p>
+</button>
    </div>
   </body>
 </html>
