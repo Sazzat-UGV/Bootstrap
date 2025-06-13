@@ -10,28 +10,45 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <style>
+      .box{
+        border: 2px solid red;
+        padding: 10px;
+      }
+      .row{
+        height: 150px;
+        background-color: greenyellow;
+      }
+    </style>
   </head>
   <body>
-    <div class="container mt-4">
-      <div class="bg-success"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
+    <div class="container text-center mb-2">
+      <div class="row align-items-start">
+        <div class="col-4 box">One of three columns</div>
+        <div class="col-4 box">One of three columns</div>
+        <div class="col-4 box">One of three columns</div>
+      </div>
     </div>
-    <div class="container-sm mt-4">
-      <div class="bg-success-subtle"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
+    <div class="container text-center mb-2">
+      <div class="row align-items-center">
+        <div class="col-4 box">One of three columns</div>
+        <div class="col-4 box">One of three columns</div>
+        <div class="col-4 box">One of three columns</div>
+      </div>
     </div>
-    <div class="container-md mt-4">
-      <div class="bg-danger"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
+    <div class="container text-center mb-2">
+      <div class="row align-items-end">
+        <div class="col-4 box">One of three columns</div>
+        <div class="col-4 box">One of three columns</div>
+        <div class="col-4 box">One of three columns</div>
+      </div>
     </div>
-    <div class="container-lg mt-4">
-      <div class="bg-dark-subtle"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
-    </div>
-    <div class="container-xl mt-4">
-      <div class="bg-warning"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
-    </div>
-    <div class="container-xxl mt-4">
-      <div class="bg-warning-subtle"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
-    </div>
-    <div class="container-fluid mt-4">
-      <div class="bg-info"><p class="fw-semibold fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus impedit? Placeat?</p></div>
+    <div class="container text-center mb-2">
+      <div class="row">
+        <div class="col-4 box align-self-start">One of three columns</div>
+        <div class="col-4 box align-self-center">One of three columns</div>
+        <div class="col-4 box align-self-end">One of three columns</div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
