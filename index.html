@@ -10,11 +10,37 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <style>
+      .carousel-img {
+        height: 85vh !important;
+        object-fit: cover;
+      }
+
+      @media (max-width: 425px) {
+        .carousel-img {
+          height: 20px !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .carousel-img {
+          height: 400px !important;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .carousel-img {
+          height: 500px !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-danger">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Programming</a>
+        <a class="navbar-brand text-white fs-4 fw-semibold" href="#"
+          >Programming</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -29,7 +55,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Product</a>
@@ -64,16 +92,80 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-danger" type="submit">
-              Search
-            </button>
+            <button class="btn btn-danger" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
+    <header>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="./images/5.jpg"
+              class="d-block w-100 carousel-img"
+              alt="5.jpg"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./images/8.jpg"
+              class="d-block w-100 carousel-img"
+              alt="8.jpg"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./images/7.jpg"
+              class="d-block w-100 carousel-img"
+              alt="7.jpg"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./images/6.jpg"
+              class="d-block w-100 carousel-img"
+              alt="6.jpg"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
       crossorigin="anonymous"
     ></script>
   </body>
